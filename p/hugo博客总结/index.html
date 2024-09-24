@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="first title 1111\nsecond 第二篇章\n">
-<title>MyFirstBlog</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
+<title>Hugo博客总结</title>
 
-<link rel='canonical' href='https://1510882710.github.io/p/myfirstblog/'>
+<link rel='canonical' href='https://1510882710.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="MyFirstBlog">
-<meta property='og:description' content="first title 1111\nsecond 第二篇章\n">
-<meta property='og:url' content='https://1510882710.github.io/p/myfirstblog/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Hugo博客总结">
+<meta property='og:description' content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
+<meta property='og:url' content='https://1510882710.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/'>
 <meta property='og:site_name' content='wfg'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-23T19:39:04&#43;08:00'/><meta property='article:modified_time' content='2024-09-23T19:39:04&#43;08:00'/>
-<meta name="twitter:title" content="MyFirstBlog">
-<meta name="twitter:description" content="first title 1111\nsecond 第二篇章\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-24T19:09:47&#43;08:00'/><meta property='article:modified_time' content='2024-09-24T19:09:47&#43;08:00'/>
+<meta name="twitter:title" content="Hugo博客总结">
+<meta name="twitter:description" content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -292,8 +292,22 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#first-title">first title</a></li>
-    <li><a href="#second">second</a></li>
+    <li><a href="#下载hugo">下载hugo</a>
+      <ol>
+        <li><a href="#新建文章及本地部署需要的代码">新建文章及本地部署需要的代码</a></li>
+        <li><a href="#注意">注意</a></li>
+      </ol>
+    </li>
+    <li><a href="#下载主题">下载主题</a></li>
+    <li><a href="#上传到github">上传到github</a></li>
+    <li><a href="#自动化部署github">自动化部署github</a></li>
+    <li><a href="#看板娘">看板娘</a>
+      <ol>
+        <li><a href="#待解决问题">待解决问题</a></li>
+      </ol>
+    </li>
+    <li><a href="#命令汇总">命令汇总</a></li>
+    <li><a href="#个人看法">个人看法</a></li>
   </ol>
 </nav>
         </div>
@@ -313,7 +327,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/myfirstblog/">MyFirstBlog</a>
+            <a href="/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/">Hugo博客总结</a>
         </h2>
     
         
@@ -335,7 +349,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Sep 23, 2024</time>
+                <time class="article-time--published">Sep 24, 2024</time>
             </div>
         
 
@@ -350,7 +364,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -365,24 +379,144 @@
     <section class="article-content">
     
     
-    <h2 id="first-title">first title
-</h2><p>1111</p>
-<p><img src="/p/myfirstblog/index/111.png"
-	width="274"
-	height="130"
-	srcset="/p/myfirstblog/index/111_hu12319555418859949852.png 480w, /p/myfirstblog/index/111_hu7227399557341302679.png 1024w"
+    <h2 id="下载hugo">下载hugo
+</h2><ol>
+<li>我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量</li>
+</ol>
+<h3 id="新建文章及本地部署需要的代码">新建文章及本地部署需要的代码
+</h3><ol>
+<li>
+<p>在dev文件夹内 cmd</p>
+</li>
+<li>
+<p>新建文章代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new content post/要修改的名称/index.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动本地服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h3 id="注意">注意
+</h3><ol>
+<li>
+<p>只能用以下代码新建博客,不能修改index.md的名字,否则,无法显示</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new content post/hugo博客总结/index.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>只能更改 &ldquo;博客总结&rdquo; 这几个字
+<img src="/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191805554.png"
+	width="781"
+	height="355"
+	srcset="/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191805554_hu6397861247483458235.png 480w, /p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191805554_hu6738932504530715834.png 1024w"
 	loading="lazy"
 	
-		alt="111"
+		alt="image-20240924191805554"
 	
 	
 		class="gallery-image" 
-		data-flex-grow="210"
-		data-flex-basis="505px"
+		data-flex-grow="220"
+		data-flex-basis="528px"
 	
 ></p>
-<h2 id="second">second
-</h2><p>第二篇章</p>
+</li>
+<li>
+<p>只有二级标题才能显示目录
+<img src="/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191635548.png"
+	width="1360"
+	height="711"
+	srcset="/p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191635548_hu1294002266817841205.png 480w, /p/hugo%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/index/image-20240924191635548_hu8801803089306613655.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240924191635548"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="191"
+		data-flex-basis="459px"
+	
+></p>
+</li>
+</ol>
+<h2 id="下载主题">下载主题
+</h2><h2 id="上传到github">上传到github
+</h2><h2 id="自动化部署github">自动化部署github
+</h2><h2 id="看板娘">看板娘
+</h2><h3 id="待解决问题">待解决问题
+</h3><ol>
+<li>需要 2分钟 才能显示看板娘</li>
+</ol>
+<ul>
+<li>
+<p><input disabled="" type="checkbox"> 加载速度慢,很长时间不显示</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 为什么使用的是本地模型,切换人物时加载速度还是那么慢</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 看板娘适配主题的其他内容 例如复制成功时,显示&quot;记得标明出处啊&quot;等</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 必须删除浏览器图片缓存才能出现</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> F12的控制台一直有报错</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 时灵时不灵,有时候出现有时候不出现</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 引入动态背景界面</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 实现无感刷新</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 标题,副标题,首页图片怎么设置</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 名人名言的设置</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 修改文章时间的设置</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 修改文章次数的设置</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 头像的上传,不用PS,用网站圈定范围</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 如何改变 typora的快捷键</p>
+</li>
+</ul>
+<h2 id="命令汇总">命令汇总
+</h2><h2 id="个人看法">个人看法
+</h2><ol>
+<li>还是hugo好用,用hexo,图片一直显示不了,</li>
+<li>hexo的npm安装超级慢,等了好几分钟,且容易报错,还不知道哪里错了</li>
+<li>hugo随时编写,安装简单,且编写实时显示到网址上</li>
+<li>最重要的是,图片一次成功显示,不用浪费那么长的时间</li>
+</ol>
 
 </section>
 
