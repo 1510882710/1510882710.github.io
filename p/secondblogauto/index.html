@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://1510882710.github.io/p/secondblogauto/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="SecondBlogAuto">
+<link rel="stylesheet" href="/scss/style.min.890e66dd6279fa5677449a87e049d1a47885532bdc44b00553efcade3e16315e.css"><meta property='og:title' content="SecondBlogAuto">
 <meta property='og:description' content="二级标题 只有二级标题能显示目录\n代码测试 自动化部署提交\n1 2 3 4 5 6 git init git add . git commit -m &#34;first commit&#34; git branch -M main git remote add origin {你的github仓库地址} git push -u origin main 图片显示测试 超链接链接测试 魏富贵的github\n">
 <meta property='og:url' content='https://1510882710.github.io/p/secondblogauto/'>
 <meta property='og:site_name' content='wfg'>
@@ -483,20 +483,11 @@
 
     
 
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2024 wfg
-    </section>
     
-    <section class="powerby">
-        
-            123 <br/>
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
-</footer>
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
 
 
     
@@ -595,6 +586,67 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+
+    
+    <script src=https://1510882710.github.io/js/topbar.min.js></script>
+
+
+
+<script>
+	var pjax = new Pjax({
+	  selectors: [
+	    ".main-container"
+	  ]
+	})
+	
+	pjax._handleResponse = pjax.handleResponse;
+	pjax.handleResponse = function(responseText, request, href, options) {
+	    if (request.responseText.match("<html")) {
+	        
+	        let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+	        
+	        let bodyClass = newDom.body.className;
+	        document.body.setAttribute("class", bodyClass)
+	        
+	        
+			
+			setTimeout(() => {
+				pjax._handleResponse(responseText, request, href, options);
+			}, 100)
+			
+	    } else {
+	        
+	    }
+	}
+	
+	
+	topbar.config({
+	    barColors: {
+	        '0': 'rgba(255,  255, 255, 1)', 
+	        '1.0': 'rgba(0, 149, 234,  1)' 
+	    }
+	})
+	
+	document.addEventListener('pjax:send', () => {
+	        
+	        topbar.show();
+	})
+	
+	document.addEventListener('pjax:complete', () => {
+	    
+	    window.Stack.init();
+		
+		topbar.hide();
+	})  
+
+	
+</script>
+
 
 <script>
 

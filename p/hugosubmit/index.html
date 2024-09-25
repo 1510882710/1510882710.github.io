@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
+<title>hugoSubmit</title>
+
+<link rel='canonical' href='https://1510882710.github.io/p/hugosubmit/'>
+
+<link rel="stylesheet" href="/scss/style.min.890e66dd6279fa5677449a87e049d1a47885532bdc44b00553efcade3e16315e.css"><meta property='og:title' content="hugoSubmit">
+<meta property='og:description' content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
+<meta property='og:url' content='https://1510882710.github.io/p/hugosubmit/'>
+<meta property='og:site_name' content='wfg'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-24T19:09:47&#43;08:00'/><meta property='article:modified_time' content='2024-09-24T19:09:47&#43;08:00'/>
+<meta name="twitter:title" content="hugoSubmit">
+<meta name="twitter:description" content="下载hugo 我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量 新建文章及本地部署需要的代码 在dev文件夹内 cmd\n新建文章代码\n1 hugo new content post/要修改的名称/index.md 启动本地服务\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu13739649187745961479.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😉</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">wfg</a></h1>
+            <h2 class="site-description">欢迎来到我的博客</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://www.bilibili.com/'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/>
+    </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://1510882710.github.io/en/" >English</option>
+                                
+                                    <option value="https://1510882710.github.io/" selected>中文</option>
+                                
+                                    <option value="https://1510882710.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#下载hugo">下载hugo</a>
+      <ol>
+        <li><a href="#新建文章及本地部署需要的代码">新建文章及本地部署需要的代码</a></li>
+        <li><a href="#注意">注意</a></li>
+      </ol>
+    </li>
+    <li><a href="#下载主题">下载主题</a></li>
+    <li><a href="#上传到github">上传到github</a></li>
+    <li><a href="#自动化部署github">自动化部署github</a></li>
+    <li><a href="#看板娘">看板娘</a>
+      <ol>
+        <li><a href="#待解决问题">待解决问题</a></li>
+      </ol>
+    </li>
+    <li><a href="#命令汇总">命令汇总</a></li>
+    <li><a href="#样式更改">样式更改</a>
+      <ol>
+        <li><a href="#博客内的字数统计">博客内的字数统计</a></li>
+        <li><a href="#添加网站运行多长时间">添加网站运行多长时间</a>
+          <ol>
+            <li><a href="#待改进">待改进</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#bug">Bug</a></li>
+    <li><a href="#随想">随想</a></li>
+    <li><a href="#个人看法">个人看法</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/hugosubmit/">hugoSubmit</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 24, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="下载hugo">下载hugo
+</h2><ol>
+<li>我用的是 不直接安装 ,通过解压缩包的形式 不设置系统环境变量</li>
+</ol>
+<h3 id="新建文章及本地部署需要的代码">新建文章及本地部署需要的代码
+</h3><ol>
+<li>
+<p>在dev文件夹内 cmd</p>
+</li>
+<li>
+<p>新建文章代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new content post/要修改的名称/index.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动本地服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h3 id="注意">注意
+</h3><ol>
+<li>
+<p>只能用以下代码新建博客,不能修改index.md的名字,否则,无法显示</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new content post/hugo博客总结/index.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>只能更改 &ldquo;博客总结&rdquo; 这几个字
+<img src="/p/hugosubmit/index/image-20240924191805554.png"
+	width="781"
+	height="355"
+	srcset="/p/hugosubmit/index/image-20240924191805554_hu6397861247483458235.png 480w, /p/hugosubmit/index/image-20240924191805554_hu6738932504530715834.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240924191805554"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="220"
+		data-flex-basis="528px"
+	
+></p>
+</li>
+<li>
+<p>只有二级标题才能显示目录
+<img src="/p/hugosubmit/index/image-20240924191635548.png"
+	width="1360"
+	height="711"
+	srcset="/p/hugosubmit/index/image-20240924191635548_hu1294002266817841205.png 480w, /p/hugosubmit/index/image-20240924191635548_hu8801803089306613655.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240924191635548"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="191"
+		data-flex-basis="459px"
+	
+></p>
+</li>
+</ol>
+<h2 id="下载主题">下载主题
+</h2><h2 id="上传到github">上传到github
+</h2><h2 id="自动化部署github">自动化部署github
+</h2><h2 id="看板娘">看板娘
+</h2><h3 id="待解决问题">待解决问题
+</h3><ol>
+<li>需要 2分钟 才能显示看板娘</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> 加载速度慢,很长时间不显示</li>
+<li><input disabled="" type="checkbox"> 为什么使用的是本地模型,切换人物时加载速度还是那么慢</li>
+<li><input disabled="" type="checkbox"> 看板娘适配主题的其他内容 例如复制成功时,显示&quot;记得标明出处啊&quot;等</li>
+<li><input disabled="" type="checkbox"> 必须删除浏览器图片缓存才能出现</li>
+<li><input disabled="" type="checkbox"> F12的控制台一直有报错</li>
+<li><input disabled="" type="checkbox"> 时灵时不灵,有时候出现有时候不出现</li>
+<li><input disabled="" type="checkbox"> 引入动态背景界面</li>
+<li><input disabled="" type="checkbox"> 实现无感刷新</li>
+<li><input disabled="" type="checkbox"> 标题,副标题,首页图片怎么设置</li>
+<li><input disabled="" type="checkbox"> 名人名言的设置</li>
+<li><input disabled="" type="checkbox"> 修改文章时间的设置</li>
+<li><input disabled="" type="checkbox"> 修改文章次数的设置</li>
+<li><input disabled="" type="checkbox"> 头像的上传,不用PS,用网站圈定范围</li>
+<li><input disabled="" type="checkbox"> 如何改变 typora的快捷键</li>
+<li><input disabled="" type="checkbox"> typora放大与缩小 图像</li>
+</ul>
+<h2 id="命令汇总">命令汇总
+</h2><h2 id="样式更改">样式更改
+</h2><h3 id="博客内的字数统计">博客内的字数统计
+</h3><p>我感觉应该在 stack 模版上更改</p>
+<p>步骤</p>
+<ol>
+<li>看stack的中文文档</li>
+<li>顺便写写图片,副标题等</li>
+</ol>
+<h3 id="添加网站运行多长时间">添加网站运行多长时间
+</h3><p>位置: 博客左下角</p>
+<p>参考博客: <a class="link" href="https://thirdshire.com/hugo-stack-renovation/#%e5%8d%9a%e5%ae%a2%e5%b7%b2%e8%bf%90%e8%a1%8cx%e5%a4%a9x%e5%b0%8f%e6%97%b6x%e5%88%86%e9%92%9f%e5%ad%97%e6%a0%b7"  target="_blank" rel="noopener"
+    >Hugo Stack主题装修笔记 (thirdshire.com)</a></p>
+<p>CTRl + 鼠标左键 跳转到网页</p>
+<p>涉及的4个文档位置:</p>
+<ol>
+<li>
+<p>layouts/partials/footer/custom.html</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-HTML" data-lang="HTML"><span class="line"><span class="cl"><span class="c">&lt;!-- Add blog running time --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s1">&#39;2023-3-18&#39;</span><span class="p">;</span> <span class="c1">//website start date
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">s1</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-/g</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">timeDifference</span> <span class="o">=</span> <span class="nx">s2</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nx">s1</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">days</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">timeDifference</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">hours</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">minutes</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">timeDifference</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">days</span> <span class="o">+</span> <span class="s2">&#34;天&#34;</span> <span class="o">+</span> <span class="nx">hours</span> <span class="o">+</span> <span class="s2">&#34;小时&#34;</span> <span class="o">+</span> <span class="nx">minutes</span> <span class="o">+</span> <span class="s2">&#34;分钟&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;runningdays&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>layouts/partials/footer/footer.html</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Add</span> <span class="nt">blog</span> <span class="nt">running</span> <span class="nt">time</span> <span class="nt">--</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">section</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;running-time&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">本博客已稳定运行</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">span</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&#34;runningdays&#34;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;running-days&#34;</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">section</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>assets/scss/partials/footer.scss</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.running-time</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-text-color-secondary</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="na">font-weight</span><span class="o">:</span> <span class="ni">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nc">.running-days</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="na">font-weight</span><span class="o">:</span><span class="ni">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">emphasize-text-color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>assets/scss/variables.scss</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">    <span class="na">--accent-color-text</span><span class="o">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">--body-text-color</span><span class="o">:</span> <span class="mh">#b0b0b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">--emphasize-text-color</span><span class="o">:</span> <span class="mh">#9e8f9f</span><span class="p">;</span> <span class="c1">// Add emphasize font color
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">&amp;</span><span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;dark&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="na">--emphasize-text-color</span><span class="o">:</span> <span class="mh">#d5cfc4</span><span class="p">;</span> <span class="c1">// Add emphasize font color for dark scheme
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>知识点:</p>
+<ol>
+<li>可以多个 </script></li>
+</ol>
+<h4 id="待改进">待改进
+</h4><ul>
+<li><input disabled="" type="checkbox"> 将安全运行放到博客上面</li>
+<li><input disabled="" type="checkbox"> 显示运行了多少秒</li>
+<li><input disabled="" type="checkbox"> </li>
+</ul>
+<h2 id="bug">Bug
+</h2><p><img src="/p/hugosubmit/index/image-20240925144846042.png"
+	width="650"
+	height="272"
+	srcset="/p/hugosubmit/index/image-20240925144846042_hu11055227087106938071.png 480w, /p/hugosubmit/index/image-20240925144846042_hu6819135020949508377.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240925144846042"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="238"
+		data-flex-basis="573px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>&lt;script&gt;</code></p>
+<p>反正就是不能有单独 的  &lt;  script     &gt;</p>
+<h2 id="随想">随想
+</h2><p>看板娘在github上挺快的
+以后用ssh提交,挺快的,稳定
+github的博客提交后 有延迟,大概 1 分钟
+小狗图标 标签页 也调教上去了
+既然在github上挺快的,那就先不改了,就这样子 看板娘</p>
+<ol>
+<li>打字机模式: 让鼠标一直在屏幕正中间,也就是说,要打字的地方会一直显示在正中间</li>
+</ol>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 页面博客阿内搜索
+直接在网页上用 CTRl + F</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 博客字数统计</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 直接写一级标题 看看能不能显示到目录上</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 自动部署到github上的命令 与 标题</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 博客的图片与 副标题 与 标签</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 以后只要保证 这个 文件夹不被删除就行</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 缩小看板娘的大小</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> typora的自动保存</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 开启博客的评论功能</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> statck主题的暗色模式移动到 右上角</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 删除stack的左下角语言切换,只保留 中文</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 当提交后 发现 博客 无法显示 如何回退
+实际上 就是 git 返回到上一分支</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 每次提交的分支名称记录</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 网页标签的 狗图案的 位置</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> tupora如何复制代码</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> bug 看板娘挪动后,鼠标 无法点击 目录 ,按住左键,即使 鼠标不再看板娘的位置,依然会挪动看板娘
+时间: 两个   添加网站运行时间 后
+而且 在看板娘 原位置,,即使看板娘不再,依然 不能跳转目录,会移动 看板娘</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> bug 个人看法,后面无法显示
+<img src="/p/hugosubmit/index/image-20240924212205018.png"
+	width="1160"
+	height="201"
+	srcset="/p/hugosubmit/index/image-20240924212205018_hu10462306440570587343.png 480w, /p/hugosubmit/index/image-20240924212205018_hu15612417298717323081.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240924212205018"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="577"
+		data-flex-basis="1385px"
+	
+></p>
+</li>
+</ul>
+<h2 id="个人看法">个人看法
+</h2><ol>
+<li>还是hugo好用,用hexo,图片一直显示不了,</li>
+<li>hexo的npm安装超级慢,等了好几分钟,且容易报错,还不知道哪里错了</li>
+<li>hugo随时编写,安装简单,且编写实时显示到网址上</li>
+<li>最重要的是,图片一次成功显示,不用浪费那么长的时间</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+
+    
+    <script src=https://1510882710.github.io/js/topbar.min.js></script>
+
+
+
+<script>
+	var pjax = new Pjax({
+	  selectors: [
+	    ".main-container"
+	  ]
+	})
+	
+	pjax._handleResponse = pjax.handleResponse;
+	pjax.handleResponse = function(responseText, request, href, options) {
+	    if (request.responseText.match("<html")) {
+	        
+	        let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+	        
+	        let bodyClass = newDom.body.className;
+	        document.body.setAttribute("class", bodyClass)
+	        
+	        
+			
+			setTimeout(() => {
+				pjax._handleResponse(responseText, request, href, options);
+			}, 100)
+			
+	    } else {
+	        
+	    }
+	}
+	
+	
+	topbar.config({
+	    barColors: {
+	        '0': 'rgba(255,  255, 255, 1)', 
+	        '1.0': 'rgba(0, 149, 234,  1)' 
+	    }
+	})
+	
+	document.addEventListener('pjax:send', () => {
+	        
+	        topbar.show();
+	})
+	
+	document.addEventListener('pjax:complete', () => {
+	    
+	    window.Stack.init();
+		
+		topbar.hide();
+	})  
+
+	
+</script>
+
+
+<script>
+
+const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+
+
+const cssPath = "https://1510882710.github.io/waifu/waifu.css"
+const waifutipsjsonPath = "https://1510882710.github.io/waifu/waifu-tips.json"
+const live2dminjsPath = "https://1510882710.github.io/waifu/live2d.min.js"
+
+
+
+function loadExternalResource(url, type) {
+	return new Promise((resolve, reject) => {
+		let tag;
+
+		if (type === "css") {
+			tag = document.createElement("link");
+			tag.rel = "stylesheet";
+			tag.href = url;
+		}
+		else if (type === "js") {
+			tag = document.createElement("script");
+			tag.src = url;
+		}
+		if (tag) {
+			tag.onload = () => resolve(url);
+			tag.onerror = () => reject(url);
+			document.head.appendChild(tag);
+		}
+	});
+}
+
+
+
+if (screen.width >= 768) {
+	Promise.all([
+		
+		loadExternalResource(cssPath, "css"),
+		
+		loadExternalResource(live2dminjsPath, "js"),
+		loadExternalResource(live2d_path + "waifu-tips.js", "js")
+	]).then(() => {
+		
+		initWidget({
+			waifuPath: waifutipsjsonPath,
+			
+			
+			cdnPath: "https://cdn.jsdelivr.net/gh/1510882710/static-resource@v1.0.0",
+			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+		});
+		initWaifuMouseEvent();
+	});
+ }
+
+function initWaifuMouseEvent() {
+        const waifu = document.getElementById("waifu");
+        let isDown = false;
+        let waifuLeft;
+        let mouseLeft;
+        let waifuTop;
+        let mouseTop;
+        
+        waifu.onmousedown = function (e) {
+            isDown = true;
+            
+            waifuLeft = waifu.offsetLeft;
+            mouseLeft = e.clientX;
+            
+            waifuTop = waifu.offsetTop;
+            mouseTop = e.clientY;
+        }
+        
+        window.onmousemove = function (e) {
+            if (!isDown) {
+                return;
+            }
+            
+            let currentLeft = waifuLeft + (e.clientX - mouseLeft);
+            if (currentLeft < 0) {
+                currentLeft = 0;
+            } else if (currentLeft > window.innerWidth - 300) {
+                currentLeft = window.innerWidth - 300;
+            }
+            waifu.style.left = currentLeft  + "px";
+            
+            let currentTop = waifuTop + (e.clientY - mouseTop);
+            if (currentTop < 30) {
+                currentTop = 30
+            } else if (currentTop > window.innerHeight - 290) {
+                currentTop = window.innerHeight - 290
+            }
+            waifu.style.top = currentTop + "px";
+        }
+        
+        window.onmouseup = function (e) {
+            isDown = false;
+        }
+    }
+
+</script>
+    </body>
+</html>
