@@ -6,14 +6,33 @@
 
 <link rel='canonical' href='https://1510882710.github.io/en/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.890e66dd6279fa5677449a87e049d1a47885532bdc44b00553efcade3e16315e.css"><meta property='og:title' content="404 Page not found">
+<link rel="stylesheet" href="/scss/style.min.716957b87dde16856bc15d57f6a6dc55af856df1e5a618af8974252574d39b35.css"><meta property='og:title' content="404 Page not found">
 <meta property='og:description' content="Example description">
 <meta property='og:url' content='https://1510882710.github.io/en/404.html'>
 <meta property='og:site_name' content='wfg'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2020-09-09T00:00:00&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-09-26T13:46:42&#43;00:00 '/>
 <meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="Example description">
     <link rel="shortcut icon" href="/favicon.ico" />
+
+
+<style>
+@font-face {
+    font-family: 'YanZhenQing';
+    src: url('/fonts/YanZhenQing.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --zh-font-family: "YanZhenQing", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+    --base-font-family: "Times New Roman", var(--sys-font-family), var(--zh-font-family);
+    --article-font-family: "Times New Roman", var(--zh-font-family);
+}
+</style>
+
+
+
 
     </head>
     <body class="">
@@ -134,9 +153,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://1510882710.github.io/en/" selected>English</option>
-                                
                                     <option value="https://1510882710.github.io/" >中文</option>
+                                
+                                    <option value="https://1510882710.github.io/en/" selected>English</option>
                                 
                                     <option value="https://1510882710.github.io/ar/" >عربي</option>
                                 
@@ -182,6 +201,19 @@
 <span id="runningdays" class="running-days"></span>
 </section>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> 
+<script src="https://fastly.jsdelivr.net/gh/lrplrplrp/bkyl2d@main/loads.js"></script>
+
+
+<section class="totalcount">
+    
+    
+        
+    
+    发表了1篇文章 · 
+    总计0.96k字
+</section>
+
 
             </main>
         </div>
@@ -215,6 +247,9 @@
 <script>
 	var pjax = new Pjax({
 	  selectors: [
+		".running-time"
+		".totalcount"
+		
 	    ".main-container"
 	  ]
 	})
@@ -261,6 +296,27 @@
 
 	
 </script>
+
+
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> 
+<script src="https://fastly.jsdelivr.net/gh/lrplrplrp/bkyl2d@main/loads.js"></script>
+
+
+<section class="totalcount">
+    
+    
+        
+    
+    发表了1篇文章 · 
+    总计0.96k字
+</section>
+
+
 
 
 <script>
@@ -363,5 +419,33 @@ function initWaifuMouseEvent() {
     }
 
 </script>
+
+
+<script>
+    let s1 = '2024-9-23'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/ribbon.min.js"
+    integrity="sha384-UEK8ZiP3VgFNP8KnKMKDmd4pAUAOJ59Y2Jo3ED2Z5qKQf6HLHovMxq7Beb9CLPUe"
+    crossorigin="anonymous"
+    size="300"
+    alpha="0.6"
+    zindex="-1"
+    defer
+></script>
+
+
     </body>
 </html>
