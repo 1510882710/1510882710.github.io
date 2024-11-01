@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://1510882710.github.io/%E5%85%B3%E4%BA%8E/'>
 
-<link rel="stylesheet" href="/scss/style.min.ab05ca5e9c7b5dd82f80db406c504004b71ffab82adc8bd25b1a3ae7397d94d0.css"><meta property='og:title' content="关于">
+<link rel="stylesheet" href="/scss/style.min.e78d0d9016eafe07eb5cc6ce216a138bbc9492ea27db931d7b6a6ea6d0fb6dd8.css"><meta property='og:title' content="关于">
 <meta property='og:description' content="This is a test page for i18n support.\n">
 <meta property='og:url' content='https://1510882710.github.io/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='wfg'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2024-09-28T11:34:29&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2024-11-01T01:59:24&#43;00:00'/>
 <meta name="twitter:title" content="关于">
 <meta name="twitter:description" content="This is a test page for i18n support.\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -34,12 +34,23 @@
 
 
 
+
+
+<link rel="stylesheet" href="/css/click-effects.css" type="text/css">
+
+
+
+
+
+
     </head>
 	
 	<div id="loader" class="pulse"></div>
 
 
     <body class="
+
+
     article-page
     ">
 		
@@ -91,7 +102,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu13739649187745961479.png" width="300"
+                        <img src="/img/avatar_hu8538870991683867308.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -347,7 +358,7 @@
 	C13.57617,35.875,13.28906,36,12.99902,36z"/>
 <circle fill="#223E49" cx="22" cy="24" r="3"/>
 </g></svg>
-				<p>最后修改时间：2024 年 09 月 28 日 11 时 34 分 29 秒</p>
+				<p>最后修改时间：2024 年 11 月 01 日 01 时 59 分 24 秒</p>
 
                 
                 
@@ -439,7 +450,7 @@
 
 
         <span>
-            最后更新于 Sep 28, 2024 11:34 UTC
+            最后更新于 Nov 01, 2024 01:59 UTC
         </span>
     </section></footer>
 
@@ -482,13 +493,8 @@
     
 
     
-<section class="running-time">
-本博客已稳定运行
-<span id="runningdays" class="running-days"></span>
+<section class="running-time">本博客已稳定运行<span id="runningdays" class="running-days"></span>
 </section>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> 
-<script src="https://fastly.jsdelivr.net/gh/lrplrplrp/bkyl2d@main/loads.js"></script>
 
 
 <section class="totalcount">
@@ -530,8 +536,20 @@
     
         
     
-    发表了14篇文章 · 
-    总计14.85k字
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了20篇文章 · 
+    总计19.98k字
 </section>
 
 
@@ -547,6 +565,12 @@
       pangu.spacingPage();
     });
 </script>
+
+
+
+
+<script src="/js/click-effects.js"></script>
+
 
 
 
@@ -660,10 +684,10 @@
 <script>
 	var pjax = new Pjax({
 	  selectors: [
-		".running-time"
-		".totalcount"
-		
 	    ".main-container"
+		
+		
+		
 	  ]
 	})
 	
@@ -711,13 +735,8 @@
 </script>
 
 
-<section class="running-time">
-本博客已稳定运行
-<span id="runningdays" class="running-days"></span>
+<section class="running-time">本博客已稳定运行<span id="runningdays" class="running-days"></span>
 </section>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> 
-<script src="https://fastly.jsdelivr.net/gh/lrplrplrp/bkyl2d@main/loads.js"></script>
 
 
 <section class="totalcount">
@@ -759,8 +778,20 @@
     
         
     
-    发表了14篇文章 · 
-    总计14.85k字
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了20篇文章 · 
+    总计19.98k字
 </section>
 
 
@@ -780,107 +811,16 @@
 
 
 
-
-<script>
-
-const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
-
-
-const cssPath = "https://1510882710.github.io/waifu/waifu.css"
-const waifutipsjsonPath = "https://1510882710.github.io/waifu/waifu-tips.json"
-const live2dminjsPath = "https://1510882710.github.io/waifu/live2d.min.js"
+<script src="/js/click-effects.js"></script>
 
 
 
-function loadExternalResource(url, type) {
-	return new Promise((resolve, reject) => {
-		let tag;
-
-		if (type === "css") {
-			tag = document.createElement("link");
-			tag.rel = "stylesheet";
-			tag.href = url;
-		}
-		else if (type === "js") {
-			tag = document.createElement("script");
-			tag.src = url;
-		}
-		if (tag) {
-			tag.onload = () => resolve(url);
-			tag.onerror = () => reject(url);
-			document.head.appendChild(tag);
-		}
-	});
-}
 
 
 
-if (screen.width >= 768) {
-	Promise.all([
-		
-		loadExternalResource(cssPath, "css"),
-		
-		loadExternalResource(live2dminjsPath, "js"),
-		loadExternalResource(live2d_path + "waifu-tips.js", "js")
-	]).then(() => {
-		
-		initWidget({
-			waifuPath: waifutipsjsonPath,
-			
-			
-			cdnPath: "https://cdn.jsdelivr.net/gh/1510882710/static-resource@v1.0.0",
-			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
-		});
-		initWaifuMouseEvent();
-	});
- }
 
-function initWaifuMouseEvent() {
-        const waifu = document.getElementById("waifu");
-        let isDown = false;
-        let waifuLeft;
-        let mouseLeft;
-        let waifuTop;
-        let mouseTop;
-        
-        waifu.onmousedown = function (e) {
-            isDown = true;
-            
-            waifuLeft = waifu.offsetLeft;
-            mouseLeft = e.clientX;
-            
-            waifuTop = waifu.offsetTop;
-            mouseTop = e.clientY;
-        }
-        
-        window.onmousemove = function (e) {
-            if (!isDown) {
-                return;
-            }
-            
-            let currentLeft = waifuLeft + (e.clientX - mouseLeft);
-            if (currentLeft < 0) {
-                currentLeft = 0;
-            } else if (currentLeft > window.innerWidth - 300) {
-                currentLeft = window.innerWidth - 300;
-            }
-            waifu.style.left = currentLeft  + "px";
-            
-            let currentTop = waifuTop + (e.clientY - mouseTop);
-            if (currentTop < 30) {
-                currentTop = 30
-            } else if (currentTop > window.innerHeight - 290) {
-                currentTop = window.innerHeight - 290
-            }
-            waifu.style.top = currentTop + "px";
-        }
-        
-        window.onmouseup = function (e) {
-            isDown = false;
-        }
-    }
 
-</script>
+
 
 
 <script>
@@ -970,6 +910,13 @@ function initWaifuMouseEvent() {
 		</script>
 		
 		
+		
+		
+		<script src="/js/click-effects.js"></script>
+		
+		
+		
+		
     </body>
 </html>
 
@@ -981,3 +928,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000); 
 });
 </script>
+
+

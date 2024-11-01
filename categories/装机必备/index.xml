@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>装机必备 on wfg</title>
+        <link>https://1510882710.github.io/categories/%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87/</link>
+        <description>Recent content in 装机必备 on wfg</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>wfg</copyright>
+        <lastBuildDate>Fri, 01 Nov 2024 01:59:24 +0000</lastBuildDate><atom:link href="https://1510882710.github.io/categories/%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用的软件</title>
+        <link>https://1510882710.github.io/p/%E4%BD%BF%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6/</link>
+        <pubDate>Sun, 29 Sep 2024 11:33:24 +0800</pubDate>
+        
+        <guid>https://1510882710.github.io/p/%E4%BD%BF%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6/</guid>
+        <description>&lt;img src="https://picsum.photos/800/600.webp?random=6a3b0aab" alt="Featured image of post 使用的软件" /&gt;&lt;!-- 到顶部 --&gt;
+&lt;p&gt;&lt;a id=&#34;top&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;使用的软件&amp;rsquo;&lt;/p&gt;
+&lt;h2 id=&#34;everything&#34;&gt;everything
+&lt;/h2&gt;&lt;p&gt;网址:&lt;/p&gt;
+&lt;h3 id=&#34;用法&#34;&gt;用法
+&lt;/h3&gt;&lt;p&gt;用于搜索win10电脑内的内容&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;基本搜索&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;关键词搜索&lt;/strong&gt;：输入关键词进行搜索，如 &lt;code&gt;document&lt;/code&gt; 将查找所有包含 “document” 的文件和文件夹。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空格分隔&lt;/strong&gt;：用空格分隔关键词，Everything 会查找包含所有关键词的文件。例如，输入 &lt;code&gt;report 2024&lt;/code&gt; 会查找包含 “report” 和 “2024” 的文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;通配符搜索&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;星号 (&lt;code&gt;*&lt;/code&gt;)&lt;/strong&gt;：匹配任意数量的字符。例如，&lt;code&gt;*.txt&lt;/code&gt; 查找所有 &lt;code&gt;.txt&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;问号 (&lt;code&gt;?&lt;/code&gt;)&lt;/strong&gt;：匹配单个字符。例如，&lt;code&gt;file?.txt&lt;/code&gt; 可以查找 &lt;code&gt;file1.txt&lt;/code&gt;、&lt;code&gt;file2.txt&lt;/code&gt; 等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;布尔搜索&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AND (&lt;code&gt;空格&lt;/code&gt; 或 &lt;code&gt;&amp;amp;&lt;/code&gt;)&lt;/strong&gt;：搜索包含多个关键词的文件。例如，&lt;code&gt;photo &amp;amp; summer&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OR (&lt;code&gt;|&lt;/code&gt;)&lt;/strong&gt;：搜索包含任意关键词的文件。例如，&lt;code&gt;photo | image&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NOT (&lt;code&gt;!&lt;/code&gt;)&lt;/strong&gt;：排除包含关键词的文件。例如，&lt;code&gt;photo !holiday&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;正则表达式&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;code&gt;/regex:your_expression/&lt;/code&gt; 格式搜索符合正则表达式的文件。例如，&lt;code&gt;regex:^.*\.jpg$&lt;/code&gt; 查找所有以 &lt;code&gt;.jpg&lt;/code&gt; 结尾的文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;高级搜索语法&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;文件名&lt;/strong&gt;：&lt;code&gt;file:&lt;/code&gt; 查找文件名。例如，&lt;code&gt;file:report&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件夹&lt;/strong&gt;：&lt;code&gt;folder:&lt;/code&gt; 查找文件夹。例如，&lt;code&gt;folder:projects&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;路径&lt;/strong&gt;：&lt;code&gt;path:&lt;/code&gt; 搜索特定路径。例如，&lt;code&gt;path:D:\Documents&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;类型&lt;/strong&gt;：&lt;code&gt;ext:&lt;/code&gt; 查找特定扩展名的文件。例如，&lt;code&gt;ext:pdf&lt;/code&gt; 查找所有 PDF 文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大小&lt;/strong&gt;：&lt;code&gt;size:&lt;/code&gt; 按文件大小搜索。例如，&lt;code&gt;size:&amp;gt;10mb&lt;/code&gt; 查找大于 10MB 的文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;日期&lt;/strong&gt;：&lt;code&gt;date:&lt;/code&gt; 按日期搜索文件。例如，&lt;code&gt;date:today&lt;/code&gt; 查找今天修改的文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;：&lt;code&gt;content:&lt;/code&gt; 搜索文件内容。例如，&lt;code&gt;content:important&lt;/code&gt; 查找内容中包含 “important” 的文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;符号搜索&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;引号 (&lt;code&gt;&amp;quot;&lt;/code&gt;)&lt;/strong&gt;：精确搜索包含空格的短语。例如，&lt;code&gt;&amp;quot;project plan&amp;quot;&lt;/code&gt; 会查找精确匹配的文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;括号 (&lt;code&gt;()&lt;/code&gt;)&lt;/strong&gt;：分组搜索条件。例如，&lt;code&gt;(report | summary) &amp;amp; 2024&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;搜索技巧&#34;&gt;搜索技巧
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;即时反馈&lt;/strong&gt;：每次输入都会自动更新搜索结果，无需手动刷新。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;过滤器&lt;/strong&gt;：可以创建自定义过滤器来快速选择特定类型文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;排序&lt;/strong&gt;：可按名称、大小、日期等排序结果，提高查找效率。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Everything 的强大之处在于其快速、灵活的搜索能力，合理使用这些规则和技巧，可以大大提高文件管理的效率。如果需要更复杂的搜索，可以结合多种规则进行。&lt;/p&gt;
+&lt;h2 id=&#34;pixpin&#34;&gt;pixpin
+&lt;/h2&gt;&lt;p&gt;截图与贴图以及动图&lt;/p&gt;
+&lt;h2 id=&#34;图吧工具箱&#34;&gt;图吧工具箱
+&lt;/h2&gt;&lt;h3 id=&#34;用途&#34;&gt;用途
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;修复dll缺失&lt;/li&gt;
+&lt;li&gt;下载正版Steam&lt;/li&gt;
+&lt;li&gt;检测鼠标双击,键盘键位失灵&lt;/li&gt;
+&lt;li&gt;烤鸡,验机,新电脑&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;末尾行&#34;&gt;末尾行
+&lt;/h2&gt;&lt;!-- 到底部 --&gt;
+&lt;p&gt;&lt;a id=&#34;bottom&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

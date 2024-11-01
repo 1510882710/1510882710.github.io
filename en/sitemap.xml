@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://1510882710.github.io/en/categories/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
+    <lastmod>2024-11-01T01:59:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://1510882710.github.io/en/p/test-chinese/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
+    <lastmod>2024-11-01T01:59:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -33,8 +33,21 @@
                 href="https://1510882710.github.io/en/p/test-chinese/"
                 />
   </url><url>
+    <loc>https://1510882710.github.io/en/categories/hugo%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-11-01T01:59:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://1510882710.github.io/categories/hugo%E5%8D%9A%E5%AE%A2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://1510882710.github.io/en/categories/hugo%E5%8D%9A%E5%AE%A2/"
+                />
+  </url><url>
     <loc>https://1510882710.github.io/en/post/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
+    <lastmod>2024-11-01T01:59:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -51,21 +64,8 @@
                 href="https://1510882710.github.io/en/post/"
                 />
   </url><url>
-    <loc>https://1510882710.github.io/en/categories/test/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://1510882710.github.io/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://1510882710.github.io/en/categories/test/"
-                />
-  </url><url>
     <loc>https://1510882710.github.io/en/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
+    <lastmod>2024-11-01T01:59:24+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -80,19 +80,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://1510882710.github.io/en/"
-                />
-  </url><url>
-    <loc>https://1510882710.github.io/en/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2024-09-28T11:34:29+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://1510882710.github.io/categories/%E6%B5%8B%E8%AF%95/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://1510882710.github.io/en/categories/%E6%B5%8B%E8%AF%95/"
                 />
   </url><url>
     <loc>https://1510882710.github.io/en/tags/</loc>
